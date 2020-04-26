@@ -1,0 +1,24 @@
+{
+  "name": "projekuts",
+  "version": "1.0.0",
+  "description": "projek UTS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virgiawan267/Projek-UTS.git"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "nodejs"
+  ],
+  "author": "virgiawan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/virgiawan267/Projek-UTS/issues"
+  },
+  "homepage": "https://github.com/virgiawan267/Projek-UTS#readme"
+}
