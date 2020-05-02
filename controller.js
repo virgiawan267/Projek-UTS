@@ -65,7 +65,7 @@ exports.tampilservice = function(req,res){
     });
 };
 
-//menambahkan data service
+//ubah data service
 exports.ubahservice = function (req, res) {
     var id_service = req.body.id_service;
     var tgl_service = new Date();
