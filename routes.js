@@ -50,7 +50,11 @@ module.exports = function(app) {
 
      app.route('/hapuslevel')
      .delete(jsonku.hapuslevel);
-     
+
      app.route('/hapususer')
      .delete(jsonku.hapususer);
+
+     app.route('/hapusservice')
+     .delete(jsonku.hapusservice);
+
 }

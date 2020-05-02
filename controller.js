@@ -267,3 +267,17 @@ exports.hapususer = function(req, res){
         }
     });
 }; 
+
+//menghapus data Service
+exports.hapusservice = function(req, res){
+    var id = req.body.id_service;
+    connection.query('DELETE FROM t_servis WHERE id_service=?', [id],
+    function (error, rows, fields) {
+        if (error) {
+            console.log(error);
+        } else {
+            response.ok("Berhasil Hapus Data", res)
+        }
+    });
+}; 
+
