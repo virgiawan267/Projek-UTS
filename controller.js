@@ -241,18 +241,6 @@ exports.hapusMontir = function(req, res){
     });
 };
 
-//hapus User
-exports.hapususer = function(req, res){
-    var id = req.body.id;
-    connection.query('DELETE FROM t_user WHERE id=?', [id],
-    function (error, rows, fields) {
-        if (error) {
-            console.log(error);
-        } else {
-            response.ok("Berhasil Hapus Data", res)
-        }
-    });
-}; 
 
 //hapus level
 exports.hapuslevel = function(req, res){
@@ -266,3 +254,16 @@ exports.hapuslevel = function(req, res){
         }
     });
 };
+
+//hapus User
+exports.hapususer = function(req, res){
+    var id = req.body.id;
+    connection.query('DELETE FROM t_user WHERE id=?', [id],
+    function (error, rows, fields) {
+        if (error) {
+            console.log(error);
+        } else {
+            response.ok("Berhasil Hapus Data", res)
+        }
+    });
+}; 

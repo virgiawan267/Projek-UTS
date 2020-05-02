@@ -48,9 +48,9 @@ module.exports = function(app) {
      app.route('/hapusmontir')
      .delete(jsonku.hapusMontir);
 
-     app.route('/hapususer')
-     .delete(jsonku.hapususer);
-
      app.route('/hapuslevel')
      .delete(jsonku.hapuslevel);
+     
+     app.route('/hapususer')
+     .delete(jsonku.hapususer);
 }
