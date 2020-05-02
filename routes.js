@@ -60,4 +60,7 @@ module.exports = function(app) {
      app.route('/hapusservice')
      .delete(jsonku.hapusservice);
 
+     app.route('/ubahsparepart')
+     .put(jsonku.ubahsparepart);
+
 }
