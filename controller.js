@@ -154,3 +154,21 @@ exports.tambahuser = function (req, res) {
             }
         });
 };
+
+//menambahkan data level
+exports.tambahlevel = function (req, res) {
+    var nama_level = req.body.nama_level;
+    var role = req.body.role;
+
+
+
+    connection.query('INSERT INTO t_level (nama_level, role) VALUES(?,?)',
+        [nama_level, role], 
+        function (error, rows, fields) {
+            if (error) {
+                console.log(error);
+            } else {
+                response.ok("Berhasil Menambahkan Data", res)
+            }
+        });
+}; 
