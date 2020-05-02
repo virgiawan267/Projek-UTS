@@ -39,5 +39,8 @@ module.exports = function(app) {
      app.route('/ubahuser')
      .put(jsonku.ubahuser);
 
+     app.route('/ubahlevel')
+     .put(jsonku.ubahlevel);
+
      
 }
