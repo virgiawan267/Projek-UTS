@@ -20,4 +20,7 @@ module.exports = function(app) {
 
     app.route('/tambahservice')
     .post(jsonku.tambahservice);
+
+    app.route('/tampilservice')
+    .get(jsonku.tampilservice);
 }
